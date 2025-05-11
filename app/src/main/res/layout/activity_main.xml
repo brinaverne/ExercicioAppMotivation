@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lilac">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_infinity2"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="50dp"
+            app:tint="@color/grey"
+            android:id="@+id/image_infinity"
+            android:clickable="true" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_happy"
+            android:layout_gravity="center"
+            app:tint="@color/grey"
+            android:id="@+id/image_happy"
+            android:clickable="true"/>
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_sun"
+            android:layout_gravity="end"
+            android:layout_marginHorizontal="50dp"
+            app:tint="@color/grey"
+            android:id="@+id/image_sun"
+            android:clickable="true"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_kotlin"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/text_hello_user"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/phrase"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="220dp"
+        android:id="@+id/text_motivacional_phrase"/>
+
+    <View
+        android:layout_width="140dp"
+        android:layout_height="2dp"
+        android:background="@color/lilac"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_phrase"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="220dp"
+        android:backgroundTint="@color/lilac"
+        android:id="@+id/button_new_phrase"/>
+
+</LinearLayout>
